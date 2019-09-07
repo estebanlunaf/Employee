@@ -1,0 +1,20 @@
+using System.ComponentModel.DataAnnotations;
+
+namespace Employee1.Models
+{
+    public class Contact
+    {
+        [Key]
+        public int ID { get; set; }
+        [Required]
+        public string Name { get; set; }
+        [Required]
+        public int Salary { get; set; }
+        [Required]
+        public int Birthday{ get; set; }
+        [Required]
+        public string Recommendation { get; set; }
+        [Display (Description ="Contact")]
+        public string ContactValue { get; set; }
+    }
+}
